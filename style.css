@@ -19,7 +19,7 @@ nav {
     padding: 20px 0;
 }
 .nav-logo img {
-    width: 160px;
+    width: 110px;
 
 }
 .nav-links {
@@ -64,7 +64,7 @@ nav {
     align-items: center;
     padding: 18px 20px;
     border-radius: 5px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
 }
 .search-box input {
     background: transparent;
@@ -91,8 +91,13 @@ nav {
         margin-bottom: 10px;
         text-align: center;
     }
+    .nav-logo img {
+        width: 60px;
+    }
     .nav-links {
         justify-content: center;
+        font-size: 12px;
+        margin-top: 20px;
     }
     .nav-links a {
         margin-left: 10px;
