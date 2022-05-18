@@ -38,6 +38,7 @@ nav {
     border: 1.5px white solid;
     border-radius: 4px;
     color: white;
+    transition: 1.5s;
 }
 .mainland {
     border: 2px white solid;
@@ -83,6 +84,65 @@ nav {
 }
 
 /* content */
+/* first section */
+.section {
+    width: 100%;
+    /* min-height: 100vh; */
+    height: 650px;
+    background: #ddd;
+}
+.penthouse {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.pent-section {
+    float: left;
+    width: 75%;
+}
+.img-section {
+    float: right;
+    width: 50%;
+}
+.img-section img {
+    width: 100%;
+    height: 350px;
+    border: 1px solid black;
+}
+.img-section img:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.pent-section .about-house h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 22px;
+}
+.pent-section .about-house p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.pent-section .about-house .button {
+    margin-top: 40px;
+}
+.pent-section .about-house .button a {
+    background: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: 0;
+    color: white;
+    border-radius: 30px;
+    font-size: large;
+    letter-spacing: 1px;
+}
+.pent-section .about-house .button a:hover {
+    background: gray;
+}
+
+
+
+/* second section */
 .gallery-section {
     width: 100%;
 }
@@ -106,7 +166,7 @@ nav {
 }
 .gallery-section .gallery-wrap .gallery-images .gallery img {
     width: 100%;
-    height: auto;
+    height: 350px;
     border: 1px solid #ddd;
     display: block;
 }
@@ -293,6 +353,50 @@ form input::placeholder {
 }
 
 /* content */
+/* first section */
+@media (max-width: 768px){
+    .penthouse {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .img-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .section {
+        height: 770px;
+        background: #ddd;
+    }
+    .pent-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .pent-section .about-house h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .pent-section .about-house p {
+        font-size: 15px;
+    }
+    .pent-section .about-house .button {
+        text-align: center;
+    }
+    .pent-section .about-house .button a {
+        padding: 9px 30px;
+    }
+}
+
+
+
+
+
+/* second section */
 @media (max-width: 992px) {
     .gallery-section .gallery-wrap .gallery-images {
         grid-template-columns: (2, 1fr);
