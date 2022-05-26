@@ -4,154 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Zuzu housing</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav-logo">
-                <img src="logo.png" >
-            </div>
-            <div class="nav-links">
-                <a href="#" class="bah">Buy a house</a>
-                <div>
-                    <a href="#" class="mainland">Mainland</a>
-                    <a href="#" class="island">Island</a>
-                </div>
-            </div>
-        </nav>
-        <div class="content">
-            <h1>Buy any house  <br> of your choice</h1>
-            <div class="search-box">
-                <input type="text" placeholder="seach for houses">
-                <button type="submit"><img src="search.png" ></button>
-            </div>
-            <p>Search for houses across Nigeria</p>
-        </div>
-    </div>
+        
+                 
+        <!--Banner-->
+                    <div class="banner">
+                        <p>  Buy a house. We make Real Estate Easy. <span class="banner-link">Explore all </span> </p> <button class="banner-icon"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
 
-    <!-- content -->
-    <!-- first section -->
-    <div class="section">
-        <div class="penthouse">
-            <div class="pent-section">
-                <div class="img-section">
-                    <img src="big home.jpg" alt="">
-                </div>
-                <div class="about-house">
-                    <h3>Available Duplex in Island</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis a iusto quam sint! Cum, fuga nihil a quibusdam dolorum illo explicabo perspiciatis recusandae repellat nulla eveniet aliquid sint est qui atque hic ducimus debitis.</p>
-                    <div class="button">
-                        <a href="#">Find out price</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    <!--NavBar-->
+                    <nav class="nav-bar js-navbar">
+                        <div class="collapse1">
+                            <ul>
+                                <li>Buy</li>
+                                <li>Sell</li>
+                                <li>Rent</li>
+                                <li>Home Loans</li>
+                            </ul>
+                        </div>
+                        <div class="logo">
+                            <img src="logo.png" alt="logo" width="160px" >
+                            <button class="collapse-cancel js-collapse-cancel" onclick="collapseCancel()"><i class="fa-solid fa-xmark"></i></button>
 
+                        </div>
+                        <div class="collapse2">
+                            <ul>
+                                <li>Random</li>
+                                <li>Help</li>
+                                <li>Sign in</li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="small-size js-small-size" onclick="collapse()">
+                        <button class="js-collapse-btn"> <i class="fas fa-bars"></i></button>
+                        <div class="logo">
+                            <img src="logo.png" alt="logo" width="120px" >
+                        </div>
 
-
-
-    <!-- second section -->
-    <div class="gallery-section">
-        <div class="gallery-wrap">
-            <div class="gallery-images">
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="bungalow.jpg">
+                        <a href="signin.html" target="_blank" rel="noopener noreferrer">Sign in</a>
                     </div>
-                    <div class="text">
-                        <h3>Bungalow</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="condo.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Condo</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="detached.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Detached</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="duplex.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Duplex</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="penthouse.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Penthouse</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="image-sec">
-                        <img src="villa.jpg">
-                    </div>
-                    <div class="text">
-                        <h3>Villa</h3>
-                        <p>Lorem ipsum dolor sit amet. consectetur adipisicing.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <br><br><br><br><br><br>
-    <!-- footer -->
-    <footer>
-        <div class="row">
-            <div class="col">
-                <img src="logo.png" class="footer-logo">
-                <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet. quos coluta rendis eligendi ium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, sed. </p>
-            </div>
-            <div class="col">
-                <h3>Office <div class="line"><span></span></div></h3>
-                <p>161, Zuzu Road,</p>
-                <p>Lekki, Lagos</p>
-                <p>Nigeria</p>
-                <p class="email-id">zuzuhousing@gmail.com</p>
-                <h4>234 111111111</h4>
-            </div>
-            <div class="col">
-                <h3>Links <div class="line"><span></span></div></h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Servies</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Available Houses</a></li>
-                    <li><a href="#">Contact us</a></li>
                     
-                </ul>
-            </div>
-            <div class="col">
-                <h3>Send a mail <div class="line"><span></span></div></h3>
-                <form action="">
-                    <input type="email" placeholder="enter text" required>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-       
-    </footer>
+                    <!--Showcase-->
+                    <div class="showcase">
+                        <p class="label"> 
+                            Find it. Tour it. Buy it.
+                        <input type="text" class="js-search-input" placeholder="    Enter an address, neighborhood, city, state or country">
+                    </p>
+                    </div>
+
+    <!-- section -->
+   <section>
+           <div class="row">
+               <div class="col">
+                <img src="undraw_select_house_re_s1j9.svg" alt="buy_house" width="200" height="200">
+                <h1>Buy a home</h1>
+                <p>
+                    Find your place with an immersive photo experience and the
+                    most listings, including things you won't find anywhere else.
+                </p>
+
+                <button>Search homes</button>
+               </div>
+               <div class="col">
+                <img src="undraw_house_searching_re_stk8.svg" alt="buy_house" width="200" height="200">
+                <h1>Rent a place</h1>
+                <p>
+                    We are creating a seamless online experience, from shopping on the largest rental network, to applying, to paying rent.
+                </p>
+
+                <button>See your options</button>
+               </div>
+               <div class="col">
+                <img src="undraw_buy_house_re_8xq7.svg" alt="buy_house" width="200" height="200">
+                <h1>Sell a home</h1>
+                <p>
+                   No matter what path you take to sell your home,
+                   we can help you navigate a successful sale.
+                </p>
+
+                <button>Find rentals</button>
+               </div>
+           </div>
+   </section>
+  <footer>
+      <div>
+         <a href="#">About</a> <a href="#">Estimates</a> <a href="#">Research</a> <a href="#">Careers</a>
+         <a href="#">Help</a> <a href="#">Terms of use</a> <a href="#">Privacy portal</a> <a href="#">Blog</a> 
+      </div>
+  </footer>
 
     <script src="script.js"></script>
 </body>
